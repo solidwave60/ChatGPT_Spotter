@@ -1,1 +1,1 @@
-# ChatGPT_detector
+# ChatGPT detector
