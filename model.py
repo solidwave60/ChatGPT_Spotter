@@ -3,6 +3,7 @@ from transformers import RobertaModel
 
 # model class
 class RobertaClass(torch.nn.Module):
+    # init method
     def __init__(self):
         super(RobertaClass, self).__init__()
         # Load pre-trained RobertaModel
@@ -14,6 +15,7 @@ class RobertaClass(torch.nn.Module):
         # Define classifier layer
         self.classifier = torch.nn.Linear(768, 1)
 
+    # forward method
     def forward(self, input_ids, attention_mask):
         '''Forward pass of the model'''
         # Perform forward pass through RobertaModel
