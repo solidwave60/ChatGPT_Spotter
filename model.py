@@ -14,6 +14,7 @@ class RobertaClass(torch.nn.Module):
         # Define classifier layer
         self.classifier = torch.nn.Linear(768, 1)
 
+    # forward method
     def forward(self, input_ids, attention_mask):
         '''Forward pass of the model'''
         # Perform forward pass through RobertaModel
