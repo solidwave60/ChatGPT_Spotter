@@ -1,6 +1,7 @@
 import torch
 from transformers import RobertaModel
 
+# model class
 class RobertaClass(torch.nn.Module):
     def __init__(self):
         super(RobertaClass, self).__init__()
