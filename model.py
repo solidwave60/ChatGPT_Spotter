@@ -3,6 +3,7 @@ from transformers import RobertaModel
 
 # model class
 class RobertaClass(torch.nn.Module):
+    # init method
     def __init__(self):
         super(RobertaClass, self).__init__()
         # Load pre-trained RobertaModel
